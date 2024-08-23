@@ -15,10 +15,10 @@ const PostSchema = new mongoose.Schema({
     required: true,
     min: 10
   },
-   writer: {
-    type: String,
-    required: false,
-    min: 4
-  },
+  //  writer: {
+  //   type: String,
+  //   required: false,
+  //   min: 4
+  // },
 }, { timestamps: true })
 export default mongoose?.models?.Post || mongoose.model("Post",PostSchema)

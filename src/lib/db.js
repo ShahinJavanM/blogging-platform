@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
 
 const connection = {};
-// console.log(process.env.MONGO_URL);
+
 const MONGO_URL =
   "mongodb+srv://sjavanmardi91:Shahin_Alone007@cluster0.zubsk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 async function dbConnect() {
+  console.log(" env file:", process.env);
   if (connection.isConnected) {
     return;
   }

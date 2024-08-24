@@ -39,6 +39,7 @@ const PostDetails = (ctx: any) => {
 
         if (res.ok) {
           router.push("/");
+          router.refresh();
         }
       }
     } catch (error) {

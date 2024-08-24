@@ -36,6 +36,7 @@ const CreatePost = () => {
       const post = await res.json();
 
       router.push(`/`);
+      router.refresh();
     } catch (error) {
       console.log(error);
     }

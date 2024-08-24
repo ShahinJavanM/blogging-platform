@@ -8,7 +8,7 @@ async function fetchPosts() {
 }
 export default async function Home() {
   const posts = await fetchPosts();
-
+  // console.log(posts);
   return (
     <main className="container px-4 m-auto">
       {posts?.length > 0 && (

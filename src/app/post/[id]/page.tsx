@@ -30,7 +30,8 @@ const PostDetails = (ctx: any) => {
 
       if (confirmModal) {
         const res = await fetch(
-          `http://localhost:3000/api/post/${ctx.params.id}`,
+          // `http://localhost:3000/api/post/${ctx.params.id}`,
+          `${process.env.CLIENT_URL}api/post/${ctx.params.id}`,
           {
             headers: {},
             method: "DELETE",

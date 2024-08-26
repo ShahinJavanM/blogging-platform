@@ -17,7 +17,7 @@ const CreatePost = () => {
 
     try {
       setIsLoading(true);
-      const res = await fetch(`http://localhost:3000/api/post`, {
+      const res = await fetch(`${process.env.CLIENT_URL}/api/post`, {
         headers: {
           "Content-Type": "application/json",
         },
